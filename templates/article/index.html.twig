@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ArticleController!{% endblock %}
+
+    
+
+{% block body %}
+
+{% include 'nav.html.twig' %}
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code>/app/src/Controller/ArticleController.php</code></li>
+        <li>Your template at <code>/app/templates/article/index.html.twig</code></li>
+    </ul>
+</div>
+{% endblock %}

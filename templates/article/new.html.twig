@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Créer un nouvel article{% endblock %}
+
+{% block body %}
+
+{% include 'nav.html.twig' %}
+
+<div class="container mt-5">
+    <h1 class="mb-4">Créer un nouvel article</h1>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Formulaire de création</h5>
+            <p class="card-text">
+                Remplissez les champs ci-dessous pour ajouter un nouvel article.
+            </p>
+            {{ form_start(form) }}
+                {{ form_widget(form) }}
+                <button type="submit" class="btn btn-primary mt-3">Enregistrer</button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+</div>
+{% endblock %}
